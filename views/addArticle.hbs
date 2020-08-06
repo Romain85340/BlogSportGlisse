@@ -1,0 +1,33 @@
+<div class="addArticleContent">
+    <form action="/article/post" method="POST" enctype="multipart/form-data">
+        <div class="addArticle">
+
+            <h1>Ajouter votre propre article</h1>
+
+            <div class="customArticle">
+
+                <label for="" class="labelNameArticle">Votre Titre :</label>
+                <input type="text" class="InputNameArticle" placeholder="Entrer le titre de votre article" name="title">
+
+                <label for="" class="labelNameArticle">Choisissez votre categorie :</label>            
+                <select name="categorie" class="form-control" id="categorie">
+                    {{#each categorie}}
+                        <option value="{{this._id}}" name="{{this.title}}">{{this.title}}</option>
+                    {{/each}}
+                </select>
+
+                <label for="" class="imageArticle">Choisissez l'image de l'article :</label>
+                <input type="file" class="file-input" name="image">
+
+                <label for="" class="labelNameArticle">Le contenu de votre article :</label>
+                <input type="text" class="InputNameRegister" placeholder="Entrer le contenu de votre article" name="content">
+
+                <label for="" class="labelNameArticle">L'auteur de l'article :</label>
+                <input type="text" class="InputNameRegister" placeholder="Entrer le contenu de votre article" name="author">
+            </div>
+
+            <button class="buttonArticle">Ajoutez l'article</button>
+       
+        </div>
+    </form>
+</div>

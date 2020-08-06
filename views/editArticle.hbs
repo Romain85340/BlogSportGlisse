@@ -1,0 +1,23 @@
+<div class="editArticleContent">
+    <form action="/article/edit/{{this._id}}?_method=PUT" method="POST">
+        <div class="editArticle">
+
+            <h1>Modifiez votre article</h1>
+
+            <div class="editCustomArticle">
+
+                <label for="" class="labelNameArticle">Votre nouveau Titre :</label>
+                <input type="text" class="InputNameArticle" placeholder="Entrer le titre de votre article" name="title">
+
+                <label for="" class="labelNameArticle">Modifiez le contenu de votre article :</label>
+                <input type="text" class="InputNameArticle" placeholder="Entrer le contenu de votre article" name="content">
+
+                <label for="" class="labelNameArticle">Modifiez l'auteur de votre article :</label>
+                <input type="text" class="InputNameArticle" placeholder="Entrer le contenu de votre article" name="author">
+            </div>
+
+            <button class="buttonArticle">Modifiez l'article</button>
+       
+        </div>
+    </form>
+</div>

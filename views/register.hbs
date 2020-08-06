@@ -1,0 +1,32 @@
+<div class="contentRegister">
+    <form action="/user/register" method="POST" enctype="multipart/form-data">
+        <div class="connexionRegister">
+
+            <h1>Rejoignez la glisse !</h1>
+
+            {{#each errors}}
+                <ul>
+                    <li>{{this}}</li>
+                </ul>
+            {{/each}}
+
+            <div class="userRegister">
+
+                <label for="" class="labelNameRegister">Votre pseudo :</label>
+                <input type="text" class="InputNameRegister" placeholder="Entrer votre email" name="name" value={{data.name}}>
+
+                <label for="" class="labelNameRegister">Votre Email :</label>
+                <input type="text" class="InputNameRegister" placeholder="Entrer votre email" name="email" value={{data.email}}>
+
+                <label for="" class="imageRegister">Choisissez l'image du profil :</label>
+                <input type="file" class="file-input" name="image">
+
+                <label for="" class="labelNameRegister">Votre mot de passe :</label>
+                <input type="password" class="InputNameRegister" placeholder="Entrer votre mot de passe" name="password">
+            </div>
+
+            <button class="buttonRegister">S'inscrire</button>
+       
+        </div>
+    </form>
+</div>
