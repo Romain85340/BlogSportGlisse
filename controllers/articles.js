@@ -10,7 +10,7 @@ module.exports = async (req, res) => {
         {
           // categories : { $push : { title: "$title" }},
           _id : "$categorie", 
-          articles : { $push : { title: "$title", content: "$content", author:"$author", image: "$image" }}}
+          articles : { $push : { title: "$title", content: "$content", author:"$author", image: "$image", id: "$_id" }}}
         }
       ]
     ) 
