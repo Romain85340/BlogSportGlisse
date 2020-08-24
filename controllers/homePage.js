@@ -1,6 +1,7 @@
 const Post = require("../database/models/Article")
 const Categorie = require("../database/models/Categorie")
 const User = require("../database/models/User")
+const categorieAdd = require("./categorieAdd")
 
 
 
@@ -15,5 +16,6 @@ const post = await Post.aggregate(
         }
       ],
     )
+
   res.render("index", { post })
 }
